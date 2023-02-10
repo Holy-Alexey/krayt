@@ -1,0 +1,33 @@
+.slide-main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.slide-main {
+    > div:nth-child(1){
+    padding-left: 126px;
+    padding-top: 176px;
+    padding-bottom: 176px;
+        > p:nth-child(1){
+            font-size: 20px;
+            padding-bottom: 30px;
+        }
+        > p:nth-child(2){
+            font-size: 50px;
+            padding-bottom: 54px;
+        }
+        > a{        
+            padding: 20px 56px;
+            color: #FFFFFF;
+            background: #303030;
+            text-transform: uppercase;
+        }
+    }
+    > div:nth-child(2){
+        img{
+            width: 548px;
+            height: 548px;
+            padding-right: 36px;
+        }
+    }
+}

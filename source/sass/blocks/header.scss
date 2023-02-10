@@ -1,0 +1,89 @@
+// Заголовки Абзацев headings advantages__bord_h1
+//braickpoints >768 mobile
+//             1200..769 
+.container{
+    max-width: 1270px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.main-header--top, .main-header__wrapper{
+    padding: 24px 0;
+}
+.bg-gray{
+    background: #F8F8F8;
+}
+.main-header__nav{
+    padding: 0 25px;
+    input{
+        border: none;
+        border-left: 1px solid #F0F0F0;
+        background: #F8F8F8;
+        height: 20px;
+        padding-left: 56px;
+    }
+}
+.main-header__nav > a{
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+.main-header--top > .main-header__wrapper, .main-header__nav{
+    display: flex;
+    justify-content: space-between;
+}
+.entrance{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    gap: 20px;
+    p:nth-child(1){
+        position: relative;
+        &::after{
+            content: '';
+            width: 1px;
+            height: 10px;
+            background: #303030;
+            position: absolute;
+            top: 6px;
+            right: -10px;
+        }
+    }
+}
+.main-header__wrapper > .main-header__elem:nth-child(1) p::before {
+    content: url(../img/svg/loca.svg);
+    width: 32px;
+    position: relative;
+    top: 0;
+    left: 0;
+    padding-right: 10px;
+}
+.main-header__wrapper > .main-header__elem:nth-child(2) a::before {
+    content: url(../img/svg/tel.svg);
+    width: 32px;
+    position: relative;
+    top: 0;
+    left: 0;
+    padding-right: 10px;
+}
+.main-header--group{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    p{
+        margin: 0;
+    }
+}
+.main-header__wrapper-main{
+    display: grid!important;
+    grid-template-columns: 0.7fr 1fr 0.7fr;
+    justify-items: center;
+    padding: 0;
+}
+.main-header__elem{
+    select{
+        border:none;
+        &:checked{
+            border:none;
+        }
+    }
+}

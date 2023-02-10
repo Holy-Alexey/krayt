@@ -1,0 +1,20 @@
+//----- Библиотеки -----//
+@import "../../node_modules/swiper/swiper-bundle.min.css";
+@import "../../node_modules/normalize.css/normalize.css";
+
+//----- Глобальные стили -----//
+@import "global/variables.scss";
+@import "global/global.scss";
+@import "global/mixins.scss";
+@import "global/fonts.scss";
+
+//----- Основные стили -----//
+@import "blocks/header.scss";
+@import "blocks/head.scss";
+@import "blocks/footer.scss";
+@import "blocks/navigation.scss";
+@import "blocks/slider-main.scss";
+@import "blocks/popular.scss";
+@import "blocks/banner.scss";
+@import "blocks/dayprod.scss";
+@import "blocks/sale.scss";
