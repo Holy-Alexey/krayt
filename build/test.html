@@ -1,0 +1,599 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>Крайт</title>
+<!--  <link rel="shortcut icon" href="assets/img/favicons/icon-favicon.svg" type="image/svg">-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Prata&display=swap" rel="stylesheet">  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.min.css">
+</head>
+
+  <body>
+    <header class="main-header">
+  <div class="container">
+    <section class="main-header--top">
+      <div class="main-header__wrapper main-header__wrapper-main">
+        <div class="main-header--group">
+          <div class="main-header__elem">
+            <svg width="12" height="16" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5.99998 0C2.80482 0 0.205383 2.59944 0.205383 5.79456C0.205383 9.75981 5.39098 15.581 5.61176 15.8269C5.81913 16.0579 6.1812 16.0575 6.3882 15.8269C6.60898 15.581 11.7946 9.75981 11.7946 5.79456C11.7945 2.59944 9.1951 0 5.99998 0ZM5.99998 8.70997C4.39241 8.70997 3.0846 7.40213 3.0846 5.79456C3.0846 4.187 4.39245 2.87919 5.99998 2.87919C7.60751 2.87919 8.91532 4.18703 8.91532 5.79459C8.91532 7.40216 7.60751 8.70997 5.99998 8.70997Z" fill="#303030"/>
+            </svg>
+            <select>
+              <option selected value="peterburg">Санкт-Петербург</option>
+              <option value="moscow">Москва</option>
+              <option value="nij">Нижний Новгород</option>
+              <option value="rostov">Ростов-на-Дону</option>
+            </select>
+          </div>
+          <div class="main-header__elem">
+            <a href="tel:88007852535">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15.5645 11.7424L13.3317 9.50954C12.5342 8.71209 11.1786 9.0311 10.8596 10.0678C10.6203 10.7855 9.8229 11.1842 9.1052 11.0247C7.51031 10.626 5.3572 8.5526 4.95848 6.87797C4.71925 6.16024 5.19771 5.36279 5.91542 5.12359C6.9521 4.80461 7.27107 3.44895 6.47363 2.65151L4.24078 0.418659C3.60282 -0.139553 2.64589 -0.139553 2.08768 0.418659L0.57253 1.93381C-0.942617 3.5287 0.732019 7.75516 4.48001 11.5032C8.22801 15.2511 12.4545 17.0056 14.0494 15.4106L15.5645 13.8955C16.1228 13.2575 16.1228 12.3006 15.5645 11.7424Z" fill="#303030"/>
+                </svg>                
+              8 800 785-25-35
+            </a>
+          </div>
+        </div>
+        <div class="main-header--group">
+          <div class="main-header__elem">
+            <a href="">
+              <img src="assets/img/png/main-logo.png" alt="">          
+            </a>          
+          </div>
+        </div>
+        <div class="main-header--group">
+          <div class="main-header__elem entrance">
+            <p>Вход</p>
+            <p>Регистрация</p>
+          </div>
+          <div class="main-header__elem">
+            <a href="">
+              <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8.99998 15.5C8.46248 15.0233 7.85498 14.5275 7.21248 14H7.20415C4.94165 12.15 2.37748 10.0566 1.24498 7.54829C0.87291 6.74973 0.675732 5.8809 0.666635 4.99996C0.664151 3.7912 1.14895 2.63245 2.01149 1.7856C2.87402 0.938751 4.04147 0.475289 5.24998 0.49996C6.23384 0.501514 7.19651 0.785861 8.02331 1.31913C8.38662 1.55493 8.71533 1.84017 8.99998 2.16663C9.28622 1.84145 9.61502 1.55638 9.97748 1.31913C10.8039 0.785756 11.7664 0.501392 12.75 0.49996C13.9585 0.475289 15.1259 0.938751 15.9885 1.7856C16.851 2.63245 17.3358 3.7912 17.3333 4.99996C17.3248 5.88231 17.1276 6.75262 16.755 7.55246C15.6225 10.0608 13.0591 12.1533 10.7966 14L10.7883 14.0066C10.145 14.5308 9.53831 15.0266 9.00081 15.5066L8.99998 15.5ZM5.24998 2.16663C4.47374 2.15691 3.72504 2.454 3.16665 2.99329C2.62863 3.52176 2.32794 4.24583 2.33324 4.99996C2.34275 5.64204 2.48817 6.27484 2.75998 6.85663C3.29457 7.93888 4.0159 8.91834 4.89081 9.74996C5.71665 10.5833 6.66665 11.39 7.48831 12.0683C7.71581 12.2558 7.94748 12.445 8.17915 12.6341L8.32498 12.7533C8.54748 12.935 8.77748 13.1233 8.99998 13.3083L9.01081 13.2983L9.01581 13.2941H9.02081L9.02831 13.2883H9.03248H9.03664L9.05165 13.2758L9.08581 13.2483L9.09165 13.2433L9.10081 13.2366H9.10581L9.11331 13.23L9.66665 12.7758L9.81165 12.6566C10.0458 12.4658 10.2775 12.2766 10.505 12.0891C11.3266 11.4108 12.2775 10.605 13.1033 9.76746C13.9783 8.93626 14.6997 7.95705 15.2341 6.87496C15.5109 6.28813 15.6584 5.64871 15.6667 4.99996C15.6701 4.24816 15.3696 3.52687 14.8333 2.99996C14.276 2.45823 13.5272 2.1587 12.75 2.16663C11.8016 2.15857 10.8949 2.5561 10.2583 3.25913L8.99998 4.70913L7.74165 3.25913C7.10503 2.5561 6.19838 2.15857 5.24998 2.16663Z" fill="#303030"/>
+                </svg>              
+            </a>
+            <a href="">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line x1="5.1" y1="10" x2="5.1" y2="17" stroke="#303030" stroke-width="2.2"/>
+                <line x1="10.1" y1="2" x2="10.1" y2="17" stroke="#303030" stroke-width="2.2"/>
+                <line x1="15.1" y1="5" x2="15.1" y2="17" stroke="#303030" stroke-width="2.2"/>
+              </svg>              
+            </a>
+            <a href="">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="2" y="5" width="16" height="13" rx="1" fill="white"/>
+                <mask id="path-2-inside-1_2028_17" fill="white">
+                <rect x="2" y="5" width="16" height="13" rx="1"/>
+                </mask>
+                <rect x="2" y="5" width="16" height="13" rx="1" stroke="#303030" stroke-width="3.2" mask="url(#path-2-inside-1_2028_17)"/>
+                <path d="M6 9L6 6C6 3.79086 7.79086 2 10 2V2C12.2091 2 14 3.79086 14 6L14 9" stroke="#303030" stroke-width="1.6"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="main-header__wrapper bg-gray">
+      <nav class="main-header__nav">
+        <a href="">Каталог</a>
+        <a href="">Акции</a>
+        <a href="">Бренды</a>
+        <a href="">Магазины</a>
+        <a href="">О нас</a>
+        <a href="">Доставка и оплата</a>
+        <a href="">Статьи</a>
+        <input type="search" placeholder="Поиск по сайту">
+      </nav>
+    </section>
+  </div>
+</header>
+    
+
+    <section class="slider">  
+  <div class="container">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide slide-main">
+          <div>
+            <p>Суперскидка до 60%</p>
+            <p>НА БРИЛЛИАНТЫ</p>
+            <a href="">Подробнее</a>
+          </div>
+          <div>
+            <img src="assets/img/png/pngegg.png" alt="">
+          </div>
+        </div>
+        <div class="swiper-slide">Slide 2</div>
+        <div class="swiper-slide">Slide 3</div>        
+      </div>
+      <!-- Add Arrows -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </div>
+</section>
+<section class="popular">
+  <div class="container">
+    <div class="popular__wrapper">
+      <div class="popular__title">
+        <p>Популярные категории</p>
+      </div>
+      <div class="popular__wrapper--card">
+        <div class="popular__card">
+              <img src="assets/img/png/ring1.png" alt="">
+              <p>
+                Кольца
+              </p>
+        </div>
+        <div class="popular__card">
+          <img src="assets/img/png/ring2.png" alt="">
+          <p>
+            Серьги
+          </p>
+    </div>
+    <div class="popular__card">
+      <img src="assets/img/png/ring3.png" alt="">
+      <p>
+        Помолвочные кольца
+      </p>
+</div>
+<div class="popular__card">
+  <img src="assets/img/png/ring4.png" alt="">
+  <p>
+    Браслеты
+  </p>
+</div>
+<div class="popular__card">
+  <img src="assets/img/png/ring5.png" alt="">
+  <p>
+    Колье и подвески
+  </p>
+</div>
+<div class="popular__card">
+  <img src="assets/img/png/ring6.png" alt="">
+  <p>
+    Часы
+  </p>
+</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="sale">
+  <div class="container">
+    <div class="sale__wrapper">
+      <div class="sale__titel">
+        <p>Распродажа</p>
+      </div>
+      <div class="tabs">
+        
+          <input id="tab1" type="radio" name="tabs" checked>
+          <label for="tab1" title="Кольца">Кольца</label>
+      
+          <input id="tab2" type="radio" name="tabs">
+          <label for="tab2" title="Серьги">Серьги</label>
+      
+          <input id="tab3" type="radio" name="tabs">
+          <label for="tab3" title="Браслеты">Браслеты</label>
+      
+          <input id="tab4" type="radio" name="tabs">
+          <label for="tab4" title="Часы">Часы</label>
+        
+        
+        <section id="content-tab1">
+          <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <div class="sale__card--wrapper">
+                  <div class="sale__card saleplas hitplas">
+                    <div>
+                      <img src="assets/img/png/sale-ring.png" alt="">
+                    </div>
+                    <div>
+                      <p>
+                        41 000 ₽
+                      </p>
+                      <p>
+                        65 000 ₽
+                      </p>
+                    </div>
+                    <div>
+                      <p>Стильное кольцо из белого золота c бриллиантами</p>
+                    </div>
+                    <button class="absol">
+                      <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.94668e-08 5.40001C-0.000248434 3.95035 0.582385 2.56146 1.61681 1.54584C2.65124 0.53022 4.05058 -0.026834 5.5 1.1704e-05C7.21732 -0.0091083 8.85599 0.719186 10 2.00001C11.144 0.719186 12.7827 -0.0091083 14.5 1.1704e-05C15.9494 -0.026834 17.3488 0.53022 18.3832 1.54584C19.4176 2.56146 20.0002 3.95035 20 5.40001C20 10.756 13.621 14.8 10 18C6.387 14.773 7.94668e-08 10.76 7.94668e-08 5.40001Z" fill="#C9C9C9"/>
+                        </svg>
+                        
+                    </button>
+                    <button class="absol absol2">
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M11.0044 1.5C11.0044 0.947715 10.5567 0.5 10.0044 0.5C9.45211 0.5 9.00439 0.947715 9.00439 1.5V3.54989C8.04476 3.64609 7.12848 3.87731 6.27405 4.20772L5.4446 3.05037C5.12289 2.60146 4.49817 2.49836 4.04927 2.82007C3.60036 3.14179 3.49726 3.76651 3.81898 4.21541L4.45792 5.10695C3.92702 5.43178 3.434 5.79271 2.98539 6.17708C1.24791 7.6658 0 9.66836 0 11.5C0 13.3316 1.24791 15.3342 2.98539 16.8229C4.76222 18.3453 7.23586 19.5 10 19.5C12.7639 19.5 15.2376 18.3462 17.0145 16.8241C18.7522 15.3355 20 13.333 20 11.5C20 9.66702 18.7522 7.66444 17.0145 6.17591C16.6848 5.89346 16.331 5.62368 15.9559 5.37161L16.6253 4.43759C16.947 3.98869 16.844 3.36398 16.3951 3.04225C15.9462 2.72053 15.3214 2.82362 14.9997 3.27252L14.1918 4.39975C13.2102 3.96793 12.1376 3.66528 11.0044 3.55075V1.5ZM10 7.5C7.79086 7.5 6 9.29086 6 11.5C6 13.7091 7.79086 15.5 10 15.5C12.2091 15.5 14 13.7091 14 11.5C14 9.29086 12.2091 7.5 10 7.5Z" fill="#C9C9C9"/>
+                        </svg>
+                        
+                    </button>
+                    <div class="popup">
+                      <select name="material" id="">
+                        <option value="whiteGold">Белое золото</option>
+                        <option value="gold">Желтое золото</option>
+                        <option value="silver">Серебро</option>
+                      </select>
+                      <select name="size" id="">
+                        <option value="r16">Размер: 16</option>
+                        <option value="r17">Размер: 17</option>
+                        <option value="r19">Размер: 19</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="sale__card">
+                    <div>
+                      <img src="assets/img/png/sale-ring.png" alt="">
+                    </div>
+                    <div>
+                      <p>
+                        41 000 ₽
+                      </p>
+                      <p>
+                        65 000 ₽
+                      </p>
+                    </div>
+                    <div>
+                      <p>Стильное кольцо из белого золота c бриллиантами</p>
+                    </div>
+                    <button class="absol">
+                      <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.94668e-08 5.40001C-0.000248434 3.95035 0.582385 2.56146 1.61681 1.54584C2.65124 0.53022 4.05058 -0.026834 5.5 1.1704e-05C7.21732 -0.0091083 8.85599 0.719186 10 2.00001C11.144 0.719186 12.7827 -0.0091083 14.5 1.1704e-05C15.9494 -0.026834 17.3488 0.53022 18.3832 1.54584C19.4176 2.56146 20.0002 3.95035 20 5.40001C20 10.756 13.621 14.8 10 18C6.387 14.773 7.94668e-08 10.76 7.94668e-08 5.40001Z" fill="#C9C9C9"/>
+                        </svg>
+                        
+                    </button>
+                    <button class="absol absol2">
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M11.0044 1.5C11.0044 0.947715 10.5567 0.5 10.0044 0.5C9.45211 0.5 9.00439 0.947715 9.00439 1.5V3.54989C8.04476 3.64609 7.12848 3.87731 6.27405 4.20772L5.4446 3.05037C5.12289 2.60146 4.49817 2.49836 4.04927 2.82007C3.60036 3.14179 3.49726 3.76651 3.81898 4.21541L4.45792 5.10695C3.92702 5.43178 3.434 5.79271 2.98539 6.17708C1.24791 7.6658 0 9.66836 0 11.5C0 13.3316 1.24791 15.3342 2.98539 16.8229C4.76222 18.3453 7.23586 19.5 10 19.5C12.7639 19.5 15.2376 18.3462 17.0145 16.8241C18.7522 15.3355 20 13.333 20 11.5C20 9.66702 18.7522 7.66444 17.0145 6.17591C16.6848 5.89346 16.331 5.62368 15.9559 5.37161L16.6253 4.43759C16.947 3.98869 16.844 3.36398 16.3951 3.04225C15.9462 2.72053 15.3214 2.82362 14.9997 3.27252L14.1918 4.39975C13.2102 3.96793 12.1376 3.66528 11.0044 3.55075V1.5ZM10 7.5C7.79086 7.5 6 9.29086 6 11.5C6 13.7091 7.79086 15.5 10 15.5C12.2091 15.5 14 13.7091 14 11.5C14 9.29086 12.2091 7.5 10 7.5Z" fill="#C9C9C9"/>
+                        </svg>
+                        
+                    </button>
+                    <div class="popup">
+                      <select name="material" id="">
+                        <option value="whiteGold">Белое золото</option>
+                        <option value="gold">Желтое золото</option>
+                        <option value="silver">Серебро</option>
+                      </select>
+                      <select name="size" id="">
+                        <option value="r16">Размер: 16</option>
+                        <option value="r17">Размер: 17</option>
+                        <option value="r19">Размер: 19</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="sale__card">
+                    <div>
+                      <img src="assets/img/png/sale-ring.png" alt="">
+                    </div>
+                    <div>
+                      <p>
+                        41 000 ₽
+                      </p>
+                      <p>
+                        65 000 ₽
+                      </p>
+                    </div>
+                    <div>
+                      <p>Стильное кольцо из белого золота c бриллиантами</p>
+                    </div>
+                    <button class="absol">
+                      <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.94668e-08 5.40001C-0.000248434 3.95035 0.582385 2.56146 1.61681 1.54584C2.65124 0.53022 4.05058 -0.026834 5.5 1.1704e-05C7.21732 -0.0091083 8.85599 0.719186 10 2.00001C11.144 0.719186 12.7827 -0.0091083 14.5 1.1704e-05C15.9494 -0.026834 17.3488 0.53022 18.3832 1.54584C19.4176 2.56146 20.0002 3.95035 20 5.40001C20 10.756 13.621 14.8 10 18C6.387 14.773 7.94668e-08 10.76 7.94668e-08 5.40001Z" fill="#C9C9C9"/>
+                        </svg>
+                        
+                    </button>
+                    <button class="absol absol2">
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M11.0044 1.5C11.0044 0.947715 10.5567 0.5 10.0044 0.5C9.45211 0.5 9.00439 0.947715 9.00439 1.5V3.54989C8.04476 3.64609 7.12848 3.87731 6.27405 4.20772L5.4446 3.05037C5.12289 2.60146 4.49817 2.49836 4.04927 2.82007C3.60036 3.14179 3.49726 3.76651 3.81898 4.21541L4.45792 5.10695C3.92702 5.43178 3.434 5.79271 2.98539 6.17708C1.24791 7.6658 0 9.66836 0 11.5C0 13.3316 1.24791 15.3342 2.98539 16.8229C4.76222 18.3453 7.23586 19.5 10 19.5C12.7639 19.5 15.2376 18.3462 17.0145 16.8241C18.7522 15.3355 20 13.333 20 11.5C20 9.66702 18.7522 7.66444 17.0145 6.17591C16.6848 5.89346 16.331 5.62368 15.9559 5.37161L16.6253 4.43759C16.947 3.98869 16.844 3.36398 16.3951 3.04225C15.9462 2.72053 15.3214 2.82362 14.9997 3.27252L14.1918 4.39975C13.2102 3.96793 12.1376 3.66528 11.0044 3.55075V1.5ZM10 7.5C7.79086 7.5 6 9.29086 6 11.5C6 13.7091 7.79086 15.5 10 15.5C12.2091 15.5 14 13.7091 14 11.5C14 9.29086 12.2091 7.5 10 7.5Z" fill="#C9C9C9"/>
+                        </svg>
+                        
+                    </button>
+                    <div class="popup">
+                      <select name="material" id="">
+                        <option value="whiteGold">Белое золото</option>
+                        <option value="gold">Желтое золото</option>
+                        <option value="silver">Серебро</option>
+                      </select>
+                      <select name="size" id="">
+                        <option value="r16">Размер: 16</option>
+                        <option value="r17">Размер: 17</option>
+                        <option value="r19">Размер: 19</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="sale__card">
+                    <div>
+                      <img src="assets/img/png/sale-ring.png" alt="">
+                    </div>
+                    <div>
+                      <p>
+                        41 000 ₽
+                      </p>
+                      <p>
+                        65 000 ₽
+                      </p>
+                    </div>
+                    <div>
+                      <p>Стильное кольцо из белого золота c бриллиантами</p>
+                    </div>
+                    <button class="absol">
+                      <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.94668e-08 5.40001C-0.000248434 3.95035 0.582385 2.56146 1.61681 1.54584C2.65124 0.53022 4.05058 -0.026834 5.5 1.1704e-05C7.21732 -0.0091083 8.85599 0.719186 10 2.00001C11.144 0.719186 12.7827 -0.0091083 14.5 1.1704e-05C15.9494 -0.026834 17.3488 0.53022 18.3832 1.54584C19.4176 2.56146 20.0002 3.95035 20 5.40001C20 10.756 13.621 14.8 10 18C6.387 14.773 7.94668e-08 10.76 7.94668e-08 5.40001Z" fill="#C9C9C9"/>
+                        </svg>
+                        
+                    </button>
+                    <button class="absol absol2">
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M11.0044 1.5C11.0044 0.947715 10.5567 0.5 10.0044 0.5C9.45211 0.5 9.00439 0.947715 9.00439 1.5V3.54989C8.04476 3.64609 7.12848 3.87731 6.27405 4.20772L5.4446 3.05037C5.12289 2.60146 4.49817 2.49836 4.04927 2.82007C3.60036 3.14179 3.49726 3.76651 3.81898 4.21541L4.45792 5.10695C3.92702 5.43178 3.434 5.79271 2.98539 6.17708C1.24791 7.6658 0 9.66836 0 11.5C0 13.3316 1.24791 15.3342 2.98539 16.8229C4.76222 18.3453 7.23586 19.5 10 19.5C12.7639 19.5 15.2376 18.3462 17.0145 16.8241C18.7522 15.3355 20 13.333 20 11.5C20 9.66702 18.7522 7.66444 17.0145 6.17591C16.6848 5.89346 16.331 5.62368 15.9559 5.37161L16.6253 4.43759C16.947 3.98869 16.844 3.36398 16.3951 3.04225C15.9462 2.72053 15.3214 2.82362 14.9997 3.27252L14.1918 4.39975C13.2102 3.96793 12.1376 3.66528 11.0044 3.55075V1.5ZM10 7.5C7.79086 7.5 6 9.29086 6 11.5C6 13.7091 7.79086 15.5 10 15.5C12.2091 15.5 14 13.7091 14 11.5C14 9.29086 12.2091 7.5 10 7.5Z" fill="#C9C9C9"/>
+                        </svg>
+                        
+                    </button>
+                    <div class="popup">
+                      <select name="material" id="">
+                        <option value="whiteGold">Белое золото</option>
+                        <option value="gold">Желтое золото</option>
+                        <option value="silver">Серебро</option>
+                      </select>
+                      <select name="size" id="">
+                        <option value="r16">Размер: 16</option>
+                        <option value="r17">Размер: 17</option>
+                        <option value="r19">Размер: 19</option>
+                      </select>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+              <!-- <div class="carousel-item" data-bs-interval="2000">
+                <img src="assets/img/png/pngegg.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/img/png/pngegg.png" class="d-block w-100" alt="...">
+              </div> -->
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+              <span class="" aria-hidden="true">
+                <svg width="17" height="8" viewBox="0 0 17 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0.646446 4.35355C0.451185 4.15829 0.451185 3.84171 0.646446 3.64645L3.82843 0.464465C4.02369 0.269203 4.34027 0.269203 4.53553 0.464465C4.7308 0.659727 4.7308 0.97631 4.53553 1.17157L1.70711 4L4.53553 6.82843C4.7308 7.02369 4.7308 7.34027 4.53553 7.53553C4.34027 7.73079 4.02369 7.73079 3.82843 7.53553L0.646446 4.35355ZM17 4.5L1 4.5L1 3.5L17 3.5L17 4.5Z" fill="black"/>
+                  </svg>                  
+              </span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+              <span class="" aria-hidden="true">
+                <svg width="17" height="8" viewBox="0 0 17 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16.3536 4.35355C16.5488 4.15829 16.5488 3.84171 16.3536 3.64645L13.1716 0.464465C12.9763 0.269203 12.6597 0.269203 12.4645 0.464465C12.2692 0.659727 12.2692 0.97631 12.4645 1.17157L15.2929 4L12.4645 6.82843C12.2692 7.02369 12.2692 7.34027 12.4645 7.53553C12.6597 7.73079 12.9763 7.73079 13.1716 7.53553L16.3536 4.35355ZM4.37114e-08 4.5L16 4.5L16 3.5L-4.37114e-08 3.5L4.37114e-08 4.5Z" fill="black"/>
+                  </svg>                  
+              </span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </section>  
+        <section id="content-tab2">
+            <p>
+              Здесь размещаете любое содержание....
+            </p>
+        </section> 
+        <section id="content-tab3">
+            <p>
+              Здесь размещаете любое содержание....
+                    </p>
+        </section> 
+        <section id="content-tab4">
+            <p>
+              Здесь размещаете любое содержание....
+            </p>
+        </section>    
+    </div>
+    </div>
+  </div>
+</section>
+<section class="banner">
+  <div class="container">
+    <div class="banner__wrapper">
+      <div class="banner__card green">
+        <div>
+          <p>
+            Скидки на все украшения с бриллиантами
+          </p>
+          <p>
+            До <span>-50%</span>
+          </p>
+        </div>
+        <div>
+          <img src="assets/img/png/serga.png" alt="">
+        </div>
+      </div>
+      <div class="banner__card red">
+        <div>
+          <p>
+            Скидки
+на кольца
+и браслеты
+          </p>
+          <p>
+            До <span>-40%</span>
+          </p>
+        </div>
+        <div>
+          <img src="assets/img/png/serga2.png" alt="">
+        </div>
+      </div>
+      <div class="banner__card yellow">
+        <div>
+          <p>
+            снижение цен  на обручальные кольца
+          </p>
+          <p>
+            До <span>-60%</span>
+          </p>
+        </div>
+        <div>
+          <img src="assets/img/png/serga3.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="dayprod">
+  <div class="container">
+    <p class="dayprod__title">Товар дня</p>
+    <div class="dayprod__wrapper">
+      <div class="dayprod__galery">
+        <img src="assets/img/png/dayprod-ring.png" alt="">
+      </div>
+      <div class="dayprod__info">
+        <div class="dayprod__info--rang">
+          <div>
+            <img src="assets/img/svg/star1.svg" alt="">
+            <img src="assets/img/svg/star1.svg" alt="">
+            <img src="assets/img/svg/star1.svg" alt="">
+            <img src="assets/img/svg/star1.svg" alt="">
+            <img src="assets/img/svg/star2.svg" alt="">
+          </div>
+          <p>4,2</p>
+        </div>
+        <div class="dayprod__info--name">
+          <p>
+            Кольцо из золота с бриллиантами
+          </p>
+          <small>
+            Артикул: 1012076
+          </small>
+        </div>
+        <div class="dayprod__info--price">
+          <div>
+            <p>22 000 ₽</p>
+            <p>22 000 ₽</p>
+            <p>-45%</p>
+          </div>
+          <div class="dayprod__info--timer">
+            <div>
+              <p>12</p>
+              <small>часов</small>
+            </div>
+            <div>
+              <p>46</p>
+              <small>минут</small>
+            </div>
+            <div>
+              <p>51</p>
+              <small>секунд</small>
+            </div>
+          </div>
+        </div>
+        <div class="dayprod__info--color">
+          <p>Цвет</p>
+          <div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+        <div class="dayprod__info--size">
+          <p>Размер</p>
+          <div>
+            <div class="active-size">16,5</div>
+            <div>17,5</div>
+            <div>18,5</div>
+            <div>19</div>
+            <div>19,5</div>
+            <div>19,5</div>
+            <div>18,5</div>
+            <div>19</div>
+            <div class="disable-size">19,5</div>
+            <div class="disable-size">19,5</div>
+          </div>
+        </div>
+        <div class="dayprod__info--bord">
+          <div>
+            <button name="card">в корзину</button>
+            <button name="click">купить в 1 клик</button>
+          </div>
+          <div>
+            <p>
+              <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7.94668e-08 5.40001C-0.000248434 3.95035 0.582385 2.56146 1.61681 1.54584C2.65124 0.53022 4.05058 -0.026834 5.5 1.1704e-05C7.21732 -0.0091083 8.85599 0.719186 10 2.00001C11.144 0.719186 12.7827 -0.0091083 14.5 1.1704e-05C15.9494 -0.026834 17.3488 0.53022 18.3832 1.54584C19.4176 2.56146 20.0002 3.95035 20 5.40001C20 10.756 13.621 14.8 10 18C6.387 14.773 7.94668e-08 10.76 7.94668e-08 5.40001Z" fill="#C9C9C9"/>
+              </svg>
+              Сохранить
+            </p>
+            <p>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line x1="5.1" y1="10" x2="5.1" y2="17" stroke="#C9C9C9" stroke-width="2.2"/>
+                <line x1="10.1" y1="2" x2="10.1" y2="17" stroke="#C9C9C9" stroke-width="2.2"/>
+                <line x1="15.1" y1="5" x2="15.1" y2="17" stroke="#C9C9C9" stroke-width="2.2"/>
+                </svg>                
+              Сравнить
+            </p>
+            <p>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M11.6667 4.58329C11.6667 2.97246 12.9725 1.66663 14.5833 1.66663C16.1942 1.66663 17.5 2.97246 17.5 4.58329C17.5 6.19411 16.1942 7.49996 14.5833 7.49996C13.769 7.49996 13.0327 7.16626 12.5036 6.62816L8.22756 9.21884C8.29649 9.46745 8.33333 9.7294 8.33333 9.99996C8.33333 10.243 8.3036 10.4791 8.24758 10.7049L12.6009 13.2773C13.1212 12.7949 13.8178 12.5 14.5833 12.5C16.1942 12.5 17.5 13.8058 17.5 15.4166C17.5 17.0274 16.1942 18.3333 14.5833 18.3333C12.9725 18.3333 11.6667 17.0274 11.6667 15.4166C11.6667 15.1736 11.6964 14.9375 11.7524 14.7118L7.39908 12.1394C6.87875 12.6217 6.18214 12.9166 5.41667 12.9166C3.80585 12.9166 2.5 11.6108 2.5 9.99996C2.5 8.38914 3.80585 7.08329 5.41667 7.08329C6.15373 7.08329 6.82695 7.3567 7.34042 7.80763L11.7222 5.15284C11.6858 4.96864 11.6667 4.7782 11.6667 4.58329ZM14.5833 3.33329C13.893 3.33329 13.3333 3.89294 13.3333 4.58329C13.3333 5.27364 13.893 5.83329 14.5833 5.83329C15.2737 5.83329 15.8333 5.27364 15.8333 4.58329C15.8333 3.89294 15.2737 3.33329 14.5833 3.33329ZM5.41667 8.74996C4.72632 8.74996 4.16667 9.30961 4.16667 9.99996C4.16667 10.6903 4.72632 11.25 5.41667 11.25C6.10701 11.25 6.66667 10.6903 6.66667 9.99996C6.66667 9.30961 6.10701 8.74996 5.41667 8.74996ZM14.5833 14.1666C13.893 14.1666 13.3333 14.7263 13.3333 15.4166C13.3333 16.107 13.893 16.6666 14.5833 16.6666C15.2737 16.6666 15.8333 16.107 15.8333 15.4166C15.8333 14.7263 15.2737 14.1666 14.5833 14.1666Z" fill="#C9C9C9"/>
+              </svg>
+              Поделиться
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="article">
+  <div class="container">
+    <div class="article__wrapper">
+      <div class="article__title">
+        <p>Статьи</p>
+        <a href="#">
+          Читать все
+          <svg width="27" height="12" viewBox="0 0 27 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M26.5303 6.53033C26.8232 6.23744 26.8232 5.76257 26.5303 5.46967L21.7574 0.696701C21.4645 0.403808 20.9896 0.403808 20.6967 0.696701C20.4038 0.989594 20.4038 1.46447 20.6967 1.75736L24.9393 6L20.6967 10.2426C20.4038 10.5355 20.4038 11.0104 20.6967 11.3033C20.9896 11.5962 21.4645 11.5962 21.7574 11.3033L26.5303 6.53033ZM-6.55671e-08 6.75L26 6.75L26 5.25L6.55671e-08 5.25L-6.55671e-08 6.75Z" fill="black"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+    <div class="article__card--wrapper">
+      <div class="article__card">
+        <a href="">
+          <img src="assets/img/png/post1.png" alt="">
+          <p>21 сентября 2021</p>
+          <p>Обручальные кольца: тренды 2021</p>
+        </a>
+      </div>
+      <div class="article__card">
+        <a href="">
+          <img src="assets/img/png/post2.png" alt="">
+          <p>21 сентября 2021</p>
+          <p>Обручальные кольца: тренды 2021</p>
+        </a>
+      </div>
+      <div class="article__card">
+        <a href="">
+          <img src="assets/img/png/post3.png" alt="">
+          <p>21 сентября 2021</p>
+          <p>Обручальные кольца: тренды 2021</p>
+        </a>
+      </div>
+      <div class="article__card">
+        <a href="">
+          <img src="assets/img/png/post4.png" alt="">
+          <p>21 сентября 2021</p>
+          <p>Обручальные кольца: тренды 2021</p>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>    
+
+    
+    <script src="assets/js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+</html>
